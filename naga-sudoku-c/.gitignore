@@ -1,0 +1,18 @@
+# Build artifacts
+*.o
+*.a
+*.bin
+naga_sudoku
+tests/test_core
+
+# Raylib external source & builds
+external/
+
+# Android & Gradle
+.gradle/
+build/
+app/build/
+local.properties
+.idea/
+*.apk
+*.aab

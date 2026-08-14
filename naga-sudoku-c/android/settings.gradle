@@ -1,0 +1,2 @@
+rootProject.name = "naga-sudoku-c"
+include ':app'
