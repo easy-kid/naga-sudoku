@@ -10,7 +10,10 @@
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "cap:sync": "npx cap sync android",
-    "cap:build": "npm run build && npx cap sync android"
+    "cap:build": "npm run build && npx cap sync android",
+    "build:c": "make -C naga-sudoku-c",
+    "test:c": "make -C naga-sudoku-c test",
+    "clean:c": "make -C naga-sudoku-c clean"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.0",

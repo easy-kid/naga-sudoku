@@ -1,6 +1,6 @@
 {
-  "name": "NEURO-SUDOKU",
-  "description": "A high-fidelity Sudoku challenge with a futurist cybercore aesthetic, featuring dynamic generation, difficulty levels, and performance tracking.",
+  "name": "NAGA-SUDOKU",
+  "description": "A high-performance cyberpunk digital Sudoku game featuring dual implementations: TypeScript/React + Capacitor for Web/Mobile, and pure C99 + Raylib + Android NDK for ultra-fast native execution.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": ["sudoku-solver", "procedural-audio", "c99-native", "android-ndk"]
 }
