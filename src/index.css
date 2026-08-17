@@ -57,6 +57,20 @@
   100% { top: 100%; }
 }
 
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+.safe-area-container {
+  padding-top: max(env(safe-area-inset-top, 0px), 16px);
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+  padding-left: max(env(safe-area-inset-left, 0px), 12px);
+  padding-right: max(env(safe-area-inset-right, 0px), 12px);
+}
+
 .corner-deco {
   position: absolute;
   width: 16px;
@@ -70,6 +84,11 @@
 .tr { top: 2px; right: 2px; border-left: none; border-bottom: none; }
 .bl { bottom: 2px; left: 2px; border-right: none; border-top: none; }
 .br { bottom: 2px; right: 2px; border-left: none; border-top: none; }
+
+.global-corner-tl { top: max(env(safe-area-inset-top, 0px), 6px); left: max(env(safe-area-inset-left, 0px), 6px); border-right: none; border-bottom: none; }
+.global-corner-tr { top: max(env(safe-area-inset-top, 0px), 6px); right: max(env(safe-area-inset-right, 0px), 6px); border-left: none; border-bottom: none; }
+.global-corner-bl { bottom: max(env(safe-area-inset-bottom, 0px), 6px); left: max(env(safe-area-inset-left, 0px), 6px); border-right: none; border-top: none; }
+.global-corner-br { bottom: max(env(safe-area-inset-bottom, 0px), 6px); right: max(env(safe-area-inset-right, 0px), 6px); border-left: none; border-top: none; }
 
 .status-panel {
   @apply border border-fg p-2.5 bg-bg;

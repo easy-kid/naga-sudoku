@@ -26,7 +26,7 @@ export const SudokuGrid: React.FC<SudokuGridProps> = memo(({
   const selectedValue = selectedCell ? grid[selectedCell[0]][selectedCell[1]].value : null;
 
   return (
-    <div className="relative aspect-square w-full max-w-[min(460px,94vw,calc(100dvh-310px))] bg-bg border-2 border-fg overflow-hidden shadow-[0_0_25px_rgba(255,255,255,0.06)] will-change-transform mx-auto select-none">
+    <div className="relative aspect-square w-full max-w-[min(460px,94vw,calc(100dvh-340px))] bg-bg border-2 border-fg overflow-hidden shadow-[0_0_25px_rgba(255,255,255,0.06)] will-change-transform mx-auto select-none">
       {/* Paused Overlay */}
       <AnimatePresence>
         {isPaused && (

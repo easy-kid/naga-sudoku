@@ -50,10 +50,10 @@ import { GameOverModal } from './components/GameOverModal';
 const GlobalDecorations = React.memo(() => (
   <>
     <div className="scanline" style={{ willChange: 'top' }} />
-    <div className="corner-deco tl" />
-    <div className="corner-deco tr" />
-    <div className="corner-deco bl" />
-    <div className="corner-deco br" />
+    <div className="corner-deco global-corner-tl" />
+    <div className="corner-deco global-corner-tr" />
+    <div className="corner-deco global-corner-bl" />
+    <div className="corner-deco global-corner-br" />
   </>
 ));
 
@@ -553,7 +553,7 @@ export default function App() {
   // -------------------------------------------------------------
   if (gameState === 'menu') {
     return (
-      <div className="h-[100dvh] w-screen bg-bg flex flex-col items-center justify-between p-4 sm:p-6 cyber-grid relative overflow-hidden select-none font-mono">
+      <div className="h-[100dvh] w-screen max-h-[100dvh] bg-bg flex flex-col items-center justify-between cyber-grid relative overflow-hidden select-none font-mono safe-area-container">
         <GlobalDecorations />
 
         {/* Top bar with stats and settings icons */}
@@ -660,7 +660,7 @@ export default function App() {
   return (
     <div
       className={cn(
-        "h-[100dvh] w-screen max-h-[100dvh] bg-bg text-fg flex flex-col justify-between p-2 sm:p-4 relative overflow-hidden select-none font-mono",
+        "h-[100dvh] w-screen max-h-[100dvh] bg-bg text-fg flex flex-col justify-between relative overflow-hidden select-none font-mono safe-area-container",
         isGlitching && "glitch-active"
       )}
     >

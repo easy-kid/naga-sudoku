@@ -11,6 +11,7 @@ coverage/
 # Archives & Large binaries
 *.tar.gz
 *.zip
+*.apk
 jdk21*
 
 # Environment & Secrets
